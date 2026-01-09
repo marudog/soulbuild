@@ -1,0 +1,954 @@
+{
+  
+  "FirstBlade": {
+    "name": "퍼스트 블레이드",
+    "icon": "image/Skill/Skill_A/FirstBlade.png",
+    "characters": ["Haru"]
+  },
+  "FirstBladeA": {
+    "name": "퍼스트 블레이드 - 범위증가",
+    "icon": "image/Skill/Skill_A/FirstBlade_A.png",
+    "characters": ["Haru"]
+  },
+  "PierceStep": {
+    "name": "피어스 스텝",
+    "icon": "image/Skill/Skill_A/PierceStep.png",
+    "characters": ["Haru"]
+  },
+  "PierceStepA": {
+    "name": "피어스 스텝 - 회전 베기",
+    "icon": "image/Skill/Skill_A/PierceStep_A.png",
+    "characters": ["Haru"]
+  },
+  "PierceStepB": {
+    "name": "피어스 스텝 - 올려 베기",
+    "icon": "image/Skill/Skill_A/PierceStep_B.png",
+    "characters": ["Haru"]
+  },
+  "SpinCutter": {
+    "name": "스핀 커터",
+    "icon": "image/Skill/Skill_A/SpinCutter.png",
+    "characters": ["Haru"]
+  },
+  "SpinCutterA": {
+    "name": "스핀 커터 - 추격",
+    "icon": "image/Skill/Skill_A/SpinAttack_A.png",
+    "characters": ["Haru"]
+  },
+  "BlowUp": {
+    "name": "블로우 업",
+    "icon": "image/Skill/Skill_A/BlowUp.png",
+    "characters": ["Haru"]
+  },
+  "BladeQuake": {
+    "name": "블레이드 퀘이크",
+    "icon": "image/Skill/Skill_A/BladeQuake.png",
+    "characters": ["Haru"]
+  },
+  "BladeQuakeA": {
+    "name": "블레이드 퀘이크 - 기절",
+    "icon": "image/Skill/Skill_A/BladeQuake_A.png",
+    "characters": ["Haru"]
+  },
+  "BladeWall": {
+    "name": "블레이드 월",
+    "icon": "image/Skill/Skill_A/BladeWall.png",
+    "characters": ["Haru"]
+  },
+  "PowerSlash": {
+    "name": "파워 슬래시",
+    "icon": "image/Skill/Skill_A/PowerSlash.png",
+    "characters": ["Haru"]
+  },
+  "LeafAttack": {
+    "name": "리프 어택",
+    "icon": "image/Skill/Skill_A/LeapAttack.png",
+    "characters": ["Haru"]
+  },
+  "LeafAttackA": {
+    "name": "리프 어택 - 타격수 증가",
+    "icon": "image/Skill/Skill_A/LeapAttack_A.png",
+    "characters": ["Haru"]
+  },
+  "LeafAttackB": {
+    "name": "리프 어택 - 범위 증가",
+    "icon": "image/Skill/Skill_A/LeapAttack_B.png",
+    "characters": ["Haru"]
+  },
+  "ArenaRush": {
+    "name": "아레나 러쉬",
+    "icon": "image/Skill/Skill_A/ArenaRush.png",
+    "characters": ["Haru"]
+  },
+  "ArenaRushA": {
+    "name": "아레나 러쉬 - 시간 증가",
+    "icon": "image/Skill/Skill_A/ArenaRush_A.png",
+    "characters": ["Haru"]
+  },
+  "ArenaRushB": {
+    "name": "아레나 러쉬 - 기절",
+    "icon": "image/Skill/Skill_A/ArenaRush_B.png",
+    "characters": ["Haru"]
+  },
+  "FlashStep": {
+    "name": "플래시 스텝",
+    "icon": "image/Skill/Skill_A/FlashStep.png",
+    "characters": ["Haru"]
+  },
+  "FlashStepA": {
+    "name": "플래시 스텝 - 중량화",
+    "icon": "image/Skill/Skill_A/FlashStep_A.png",
+    "characters": ["Haru"]
+  },
+  "WindBreak": {
+    "name": "윈드 브레이크",
+    "icon": "image/Skill/Skill_A/WindBreak.png",
+    "characters": ["Haru"]
+  },
+  "WindBreakA": {
+    "name": "윈드 브레이크 - 러쉬",
+    "icon": "image/Skill/Skill_A/WindBreakA.png",
+    "characters": ["Haru"]
+  },
+  "BladeShower": {
+    "name": "블레이드 샤워",
+    "icon": "image/Skill/Skill_A/BladeShower.png",
+    "characters": ["Haru"]
+  },
+  "BladeShowerA": {
+    "name": "블레이드 샤워 - 신속화",
+    "icon": "image/Skill/Skill_A/BladeShower_A.png",
+    "characters": ["Haru"]
+  },
+  "Wafare": {
+    "name": "슬래싱 워페어",
+    "icon": "image/Skill/Skill_A/Warfare.png",
+    "characters": ["Haru"]
+  },
+  "Trollsverd": {
+    "name": "트롤스베르드",
+    "icon": "image/Skill/Skill_A/Trollsverd.png",
+    "characters": ["Haru"]
+  },
+  "SunRevolve": {
+    "name": "썬 리볼브",
+    "icon": "image/Skill/Skill_A/SunRevolve.png",
+    "characters": ["Haru"]
+  },
+  "IllusionSlash": {
+    "name": "일루젼 슬래시",
+    "icon": "image/Skill/Skill_A/Illusion_Slash.png",
+    "characters": ["Haru"]
+  },
+  "Prelude": {
+    "name": "익스팅션 프렐류드",
+    "icon": "image/Skill/Skill_A/Prelude2.png",
+    "characters": ["Haru"]
+  },
+
+
+
+  "SkyHigh": {
+    "name": "스카이 하이",
+    "icon": "image/Skill/Skill_B/SkyHigh.png",
+    "characters": ["Erwin"]
+  },
+  "RapidFire": {
+    "name": "래피드 파이어",
+    "icon": "image/Skill/Skill_B/RapidFire.png",
+    "characters": ["Erwin"]
+  },
+  "GunCombination": {
+    "name": "건 콤비네이션",
+    "icon": "image/Skill/Skill_B/GunCombination.png",
+    "characters": ["Erwin"]
+  },
+  "SlideStep": {
+    "name": "슬라이드 스텝",
+    "icon": "image/Skill/Skill_B/SlideStep.png",
+    "characters": ["Erwin"]
+  },
+  "TakeAim": {
+    "name": "테이크 에임",
+    "icon": "image/Skill/Skill_B/TakeAim.png",
+    "characters": ["Erwin"]
+  },
+  "FocusShot": {
+    "name": "포커스 샷",
+    "icon": "image/Skill/Skill_B/FocusShot.png",
+    "characters": ["Erwin"]
+  },
+  "CombatMaster": {
+    "name": "컴뱃 마스터",
+    "icon": "image/Skill/Skill_B/CombatMaster.png",
+    "characters": ["Erwin"]
+  },
+  "GuidedShot": {
+    "name": "가이디드 샷",
+    "icon": "image/Skill/Skill_B/GuidedShot.png",
+    "characters": ["Erwin"]
+  },
+  "ElectricShot": {
+    "name": "일렉트릭 샷",
+    "icon": "image/Skill/Skill_B/ElectricShot.png",
+    "characters": ["Erwin"]
+  },
+  "ChainBombing": {
+    "name": "체인 바밍",
+    "icon": "image/Skill/Skill_B/ChainBombing.png",
+    "characters": ["Erwin"]
+  },
+  "HideAndSeek": {
+    "name": "하이드 앤 식",
+    "icon": "image/Skill/Skill_B/Hide.png",
+    "characters": ["Erwin"]
+  },
+  "SoulLauncher": {
+    "name": "소울 런처",
+    "icon": "image/Skill/Skill_B/SoulLauncher.png",
+    "characters": ["Erwin"]
+  },
+  "MissionCall": {
+    "name": "미션 콜",
+    "icon": "image/Skill/Skill_B/MissionCall.png",
+    "characters": ["Erwin"]
+  },
+  "SwallowBullet": {
+    "name": "스왈로우 블렛",
+    "icon": "image/Skill/Skill_B/SwallowBullet.png",
+    "characters": ["Erwin"]
+  },
+  "NumberFive": {
+    "name": "넘버 파이브",
+    "icon": "image/Skill/Skill_B/No5.png",
+    "characters": ["Erwin"]
+  },
+
+
+
+  "EvilSlash": {
+    "name": "이블 슬래시",
+    "icon": "image/Skill/Skill_C/Evilslash.png",
+    "characters": ["Lily"]
+  },
+  "SpinningDevil": {
+    "name": "스피닝 데빌",
+    "icon": "image/Skill/Skill_C/SpinningDevil.png",
+    "characters": ["Lily"]
+  },
+  "ScytheCutter": {
+    "name": "사이드 커터",
+    "icon": "image/Skill/Skill_C/ScytheCutter.png",
+    "characters": ["Lily"]
+  },
+  "GrimCountdown": {
+    "name": "그림 카운트다운",
+    "icon": "image/Skill/Skill_C/GrimCountDown.png",
+    "characters": ["Lily"]
+  },
+  "EvilTrinity": {
+    "name": "이블 트리니티",
+    "icon": "image/Skill/Skill_C/EvilTrinity.png",
+    "characters": ["Lily"]
+  },
+  "FearChain": {
+    "name": "피어 체인",
+    "icon": "image/Skill/Skill_C/FearChain.png",
+    "characters": ["Lily"]
+  },
+  "DeathGrinder": {
+    "name": "데스 그라인더",
+    "icon": "image/Skill/Skill_C/DeathGrinder.png",
+    "characters": ["Lily"]
+  },
+  "DeathScythe": {
+    "name": "데스 사이드",
+    "icon": "image/Skill/Skill_C/DeathScythe.png",
+    "characters": ["Lily"]
+  },
+  "CruelSlash": {
+    "name": "크루얼 슬래쉬",
+    "icon": "image/Skill/Skill_C/CruelSlash.png",
+    "characters": ["Lily"]
+  },
+  "ForceRegion": {
+    "name": "포스 리전",
+    "icon": "image/Skill/Skill_C/ForceRegion.png",
+    "characters": ["Lily"]
+  },
+  "Deathtornado": {
+    "name": "데스 토네이도",
+    "icon": "image/Skill/Skill_C/DeathTornado.png",
+    "characters": ["Lily"]
+  },
+  "DeathGuillotine": {
+    "name": "데스 길로틴",
+    "icon": "image/Skill/Skill_C/DeathGuillotine.png",
+    "characters": ["Lily"]
+  },
+  "Furymach": {
+    "name": "퓨리 마하",
+    "icon": "image/Skill/Skill_C/Furymach.png",
+    "characters": ["Lily"]
+  },
+  "LeashedBeast": {
+    "name": "리쉬드 비스트",
+    "icon": "image/Skill/Skill_C/LeashedBeast.png",
+    "characters": ["Lily"]
+  },
+  "ScissorsExecution": {
+    "name": "시저스 익스큐션",
+    "icon": "image/Skill/Skill_C/ScissorsExecution.png",
+    "characters": ["Lily"]
+  },
+  "FatalScythe": {
+    "name": "페이탈 사이드",
+    "icon": "image/Skill/Skill_C/FatalScythe.png",
+    "characters": ["Lily"]
+  },
+  "Asmodeus": {
+    "name": "아스모데우스",
+    "icon": "image/Skill/Skill_C/Asmodeus2.png",
+    "characters": ["Lily"]
+  },
+
+
+
+  "WhirlDance": {
+    "name": "휠 댄스",
+    "icon": "image/Skill/Skill_D/WhirlDance.png",
+    "characters": ["Stella"]
+  },
+  "PhantomRelease": {
+    "name": "팬텀 릴리즈",
+    "icon": "image/Skill/Skill_D/PhantomRelease.png",
+    "characters": ["Stella"]
+  },
+  "TroublePass": {
+    "name": "트러블 패스",
+    "icon": "image/Skill/Skill_D/TroublePass.png",
+    "characters": ["Stella"]
+  },
+  "HystericShock": {
+    "name": "히스테릭 쇼크",
+    "icon": "image/Skill/Skill_D/HystericShock.png",
+    "characters": ["Stella"]
+  },
+  "BeastParade": {
+    "name": "비스트 퍼레이드",
+    "icon": "image/Skill/Skill_D/BeastParade.png",
+    "characters": ["Stella"]
+  },
+  "BeadsPlay": {
+    "name": "비즈 플레이",
+    "icon": "image/Skill/Skill_D/BeadsPlay.png",
+    "characters": ["Stella"]
+  },
+  "DecadePulse": {
+    "name": "데케이드 펄스",
+    "icon": "image/Skill/Skill_D/DecadePulse.png",
+    "characters": ["Stella"]
+  },
+  "SoulScream": {
+    "name": "소울 스크림",
+    "icon": "image/Skill/Skill_D/SoulScream.png",
+    "characters": ["Stella"]
+  },
+  "TwistPull": {
+    "name": "트위스트 풀",
+    "icon": "image/Skill/Skill_D/TwistPull.png",
+    "characters": ["Stella"]
+  },
+  "BlackMorass": {
+    "name": "블랙 모라스",
+    "icon": "image/Skill/Skill_D/BlackMorass.png",
+    "characters": ["Stella"]
+  },
+  "BeastTempo": {
+    "name": "베스트 템포",
+    "icon": "image/Skill/Skill_D/BestTempo.png",
+    "characters": ["Stella"]
+  },
+  "BassAttack": {
+    "name": "베이스 어택",
+    "icon": "image/Skill/Skill_D/BassAttack.png",
+    "characters": ["Stella"]
+  },
+  "WolvesShowtime": {
+    "name": "울브즈 쇼타임",
+    "icon": "image/Skill/Skill_D/WolvesShowtime.png",
+    "characters": ["Stella"]
+  },
+  "GhotstyHunt": {
+    "name": "고스티 헌트",
+    "icon": "image/Skill/Skill_D/GhostyHunt.png",
+    "characters": ["Stella"]
+  },
+  "WolfHug": {
+    "name": "울프 허그",
+    "icon": "image/Skill/Skill_D/WolfHug.png",
+    "characters": ["Stella"]
+  },
+  "HuntingAttack": {
+    "name": "헌팅 어택",
+    "icon": "image/Skill/Skill_D/HuntingAttack.png",
+    "characters": ["Stella"]
+  },
+  "StelliaSymphony": {
+    "name": "스텔리어 심포니",
+    "icon": "image/Skill/Skill_D/StelliaSymphony2.png",
+    "characters": ["Stella"]
+  },
+
+
+
+  "GloryUpper": {
+    "name": "글로리 어퍼",
+    "icon": "image/Skill/Skill_E/GloryUpper.png",
+    "characters": ["Jin"]
+  },
+  "PerfectCombination": {
+    "name": "퍼펙트 콤비네이션",
+    "icon": "image/Skill/Skill_E/PerfectCombination.png",
+    "characters": ["Jin"]
+  },
+  "HammerKick": {
+    "name": "해머 킥",
+    "icon": "image/Skill/Skill_E/HammerKick.png",
+    "characters": ["Jin"]
+  },
+  "GravityTwister": {
+    "name": "그라비티 트위스터",
+    "icon": "image/Skill/Skill_E/GravityTwister.png",
+    "characters": ["Jin"]
+  },
+  "CounterAttack": {
+    "name": "카운터 어택",
+    "icon": "image/Skill/Skill_E/CounterAttack.png",
+    "characters": ["Jin"]
+  },
+  "SpritExplosion": {
+    "name": "스피릿 익스플로젼",
+    "icon": "image/Skill/Skill_E/SpiritExplosion.png",
+    "characters": ["Jin"]
+  },
+  "SpritShooter": {
+    "name": "스피릿 슈터",
+    "icon": "image/Skill/Skill_E/SpiritShooter.png",
+    "characters": ["Jin"]
+  },
+  "SpritSurge": {
+    "name": "스피릿 서지",
+    "icon": "image/Skill/Skill_E/SpiritSurge.png",
+    "characters": ["Jin"]
+  },
+  "QuadraBlow": {
+    "name": "쿼드라 블로우",
+    "icon": "image/Skill/Skill_E/QuadraBlow.png",
+    "characters": ["Jin"]
+  },
+  "FusionArmor": {
+    "name": "퓨전 아머",
+    "icon": "image/Skill/Skill_E/FusionArmor.png",
+    "characters": ["Jin"]
+  },
+  "RapidPuncher": {
+    "name": "래피드 펀처",
+    "icon": "image/Skill/Skill_E/RapidPuncher.png",
+    "characters": ["Jin"]
+  },
+  "FinalFist": {
+    "name": "파이날 피스트",
+    "icon": "image/Skill/Skill_E/FinalFist.png",
+    "characters": ["Jin"]
+  },
+  "CounterStream": {
+    "name": "카운터 스트림",
+    "icon": "image/Skill/Skill_E/CounterStream.png",
+    "characters": ["Jin"]
+  },
+  "BarrettStraight": {
+    "name": "바렛 스트레이트",
+    "icon": "image/Skill/Skill_E/BarrettStraight.png",
+    "characters": ["Jin"]
+  },
+  "VoldTyphoon": {
+    "name": "볼드 타이푼",
+    "icon": "image/Skill/Skill_E/VoldTyphoon.png",
+    "characters": ["Jin"]
+  },
+  "RigingBust": {
+    "name": "라이징 버스트",
+    "icon": "image/Skill/Skill_E/RisingBurst.png",
+    "characters": ["Jin"]
+  },
+  "ActivityOverCharge": {
+    "name": "액티비티 오버차지",
+    "icon": "image/Skill/Skill_E/ActivityOverCharge.png",
+    "characters": ["Jin"]
+  },
+
+
+
+  "AssaultDive": {
+    "name": "어설트 다이브",
+    "icon": "image/Skill/Skill_F/AssaultDive.png",
+    "characters": ["Iris"]
+  },
+  "BulletStorm": {
+    "name": "불렛 스톰",
+    "icon": "image/Skill/Skill_F/BulletStorm.png",
+    "characters": ["Iris"]
+  },
+  "CamelSpin": {
+    "name": "카멜 스핀",
+    "icon": "image/Skill/Skill_F/CamelSpin.png",
+    "characters": ["Iris"]
+  },
+  "OperationAshes": {
+    "name": "오퍼레이션 애쉬즈",
+    "icon": "image/Skill/Skill_F/OperationAshes.png",
+    "characters": ["Iris"]
+  },
+  "Earthquake": {
+    "name": "어스퀘이크",
+    "icon": "image/Skill/Skill_F/Earthquake.png",
+    "characters": ["Iris"]
+  },
+  "ElectricCannon": {
+    "name": "일렉트릭 캐논",
+    "icon": "image/Skill/Skill_F/ElectricCannon.png",
+    "characters": ["Iris"]
+  },
+  "EternalAbyss": {
+    "name": "이터널 어비스",
+    "icon": "image/Skill/Skill_F/EternalAbyss.png",
+    "characters": ["Iris"]
+  },
+  "ExceedDriver": {
+    "name": "익시드 드라이버",
+    "icon": "image/Skill/Skill_F/ExceedDriver.png",
+    "characters": ["Iris"]
+  },
+  "RapidVulcan": {
+    "name": "래피드 벌컨",
+    "icon": "image/Skill/Skill_F/RapidVulcan.png",
+    "characters": ["Iris"]
+  },
+  "FireSomersault": {
+    "name": "파이어 서머솔트",
+    "icon": "image/Skill/Skill_F/FireSomersault.png",
+    "characters": ["Iris"]
+  },
+  "FortressCannon": {
+    "name": "포트리스 캐논",
+    "icon": "image/Skill/Skill_F/FortressCannon.png",
+    "characters": ["Iris"]
+  },
+  "FullBurst": {
+    "name": "풀 버스트",
+    "icon": "image/Skill/Skill_F/FullBurst.png",
+    "characters": ["Iris"]
+  },
+  "Liberator": {
+    "name": "리베레이터",
+    "icon": "image/Skill/Skill_F/Liberator.png",
+    "characters": ["Iris"]
+  },
+  "LimitBrake": {
+    "name": "리미트 브레이크",
+    "icon": "image/Skill/Skill_F/LimitBrake.png",
+    "characters": ["Iris"]
+  },
+  "PulseFire": {
+    "name": "펄스 파이어",
+    "icon": "image/Skill/Skill_F/PulseFire.png",
+    "characters": ["Iris"]
+  },
+  "PulverizerHeadButt": {
+    "name": "펄버라이저 헤드버트",
+    "icon": "image/Skill/Skill_F/PulverizerHeadButt.png",
+    "characters": ["Iris"]
+  },
+  "WitchsBlast": {
+    "name": "위치스 블래스트",
+    "icon": "image/Skill/Skill_F/WitchsBlast.png",
+    "characters": ["Iris"]
+  },
+
+
+
+  "AccelerateGrinder": {
+    "name": "묘도 6식 - 귀신의 노래",
+    "icon": "image/Skill/Skill_G/AccelerateGrinder.png",
+    "characters": ["Chii"]
+  },
+  "AllegroSweep": {
+    "name": "묘도 2식 - 발도",
+    "icon": "image/Skill/Skill_G/AllegroSweep.png",
+    "characters": ["Chii"]
+  },
+  "AssassinateParty": {
+    "name": "묘도 0식 - 칼바람",
+    "icon": "image/Skill/Skill_G/AssassinateParty.png",
+    "characters": ["Chii"]
+  },
+  "DestructionBlade": {
+    "name": "묘도 비기 - 파멸도",
+    "icon": "image/Skill/Skill_G/DestructionBlade2.png",
+    "characters": ["Chii"]
+  },
+  "DevilsToy": {
+    "name": "포식자의 격조",
+    "icon": "image/Skill/Skill_G/DevilsToy.png",
+    "characters": ["Chii"]
+  },
+  "GaleArrow": {
+    "name": "묘도 변형 1식 - 센바람살",
+    "icon": "image/Skill/Skill_G/GaleArrow.png",
+    "characters": ["Chii"]
+  },
+  "GiantKatana": {
+    "name": "포식자가 부르는 종말",
+    "icon": "image/Skill/Skill_G/GiantKatana.png",
+    "characters": ["Chii"]
+  },
+  "GrownCrevasse": {
+    "name": "묘도 5식 - 급강하 습격",
+    "icon": "image/Skill/Skill_G/GrownCrevasse.png",
+    "characters": ["Chii"]
+  },
+  "HeavenlyCatFlash": {
+    "name": "천상묘섬",
+    "icon": "image/Skill/Skill_G/Heavenly_Cat_s_Flash.png",
+    "characters": ["Chii"]
+  },
+  "HellsOrigin": {
+    "name": "묘도 변형 3식 - 간극",
+    "icon": "image/Skill/Skill_G/HellsOrigin.png",
+    "characters": ["Chii"]
+  },
+  "MoonStep": {
+    "name": "묘도 4식 - 월하도약",
+    "icon": "image/Skill/Skill_G/MoonStep.png",
+    "characters": ["Chii"]
+  },
+  "OverturnGround": {
+    "name": "까마귀 떨구기",
+    "icon": "image/Skill/Skill_G/OverturnGround.png",
+    "characters": ["Chii"]
+  },
+  "PeregrineFalcon": {
+    "name": "묘도 3식 - 사냥매",
+    "icon": "image/Skill/Skill_G/PeregrineFalcon.png",
+    "characters": ["Chii"]
+  },
+  "RedVine": {
+    "name": "묘도 변형 2식 - 붉은 개다래 꽃",
+    "icon": "image/Skill/Skill_G/RedVine2.png",
+    "characters": ["Chii"]
+  },
+  "ScareClow": {
+    "name": "상처 베기",
+    "icon": "image/Skill/Skill_G/ScareClow.png",
+    "characters": ["Chii"]
+  },
+  "Scratch": {
+    "name": "포식자의 격노",
+    "icon": "image/Skill/Skill_G/Scratch.png",
+    "characters": ["Chii"]
+  },
+  "SeizeField": {
+    "name": "포식자의 갈망",
+    "icon": "image/Skill/Skill_G/SeizeField.png",
+    "characters": ["Chii"]
+  },
+  "SoulChange": {
+    "name": "혈전 태세",
+    "icon": "image/Skill/Skill_G/SoulChange.png",
+    "characters": ["Chii"]
+  },
+  "ThrustArrow": {
+    "name": "묘도 1식 - 사냥 개시",
+    "icon": "image/Skill/Skill_G/ThrustArrow.png",
+    "characters": ["Chii"]
+  },
+  "Thunderbolt": {
+    "name": "포식자의 분노",
+    "icon": "image/Skill/Skill_G/Thunderbolt.png",
+    "characters": ["Chii"]
+  },
+
+
+
+  "AirBurst": {
+    "name": "에어 버스트",
+    "icon": "image/Skill/Skill_H/AirBurst.png",
+    "characters": ["Ephnel"]
+  },
+  "Amazones": {
+    "name": "아마조네스 헌트",
+    "icon": "image/Skill/Skill_H/Amazones.png",
+    "characters": ["Ephnel"]
+  },
+  "AngelicStep": {
+    "name": "엔젤릭 스텝",
+    "icon": "image/Skill/Skill_H/AngelicStep.png",
+    "characters": ["Ephnel"]
+  },
+  "AscendingTornado": {
+    "name": "어센딩 토네이도",
+    "icon": "image/Skill/Skill_H/AscendingTornado.png",
+    "characters": ["Ephnel"]
+  },
+  "VerticalClear": {
+    "name": "버티컬 클리어",
+    "icon": "image/Skill/Skill_H/VerticalClear.png",
+    "characters": ["Ephnel"]
+  },
+  "FieldOctagon": {
+    "name": "필드 옥타곤",
+    "icon": "image/Skill/Skill_H/FieldOctagon.png",
+    "characters": ["Ephnel"]
+  },
+  "LightningRod": {
+    "name": "라이트닝 로드",
+    "icon": "image/Skill/Skill_H/LightningRod.png",
+    "characters": ["Ephnel"]
+  },
+  "MambasCoil": {
+    "name": "맘바스 코일",
+    "icon": "image/Skill/Skill_H/MambasCoil.png",
+    "characters": ["Ephnel"]
+  },
+  "RegionsBombing": {
+    "name": "익시드 : 레기온스 버밍",
+    "icon": "image/Skill/Skill_H/Regions_Bombing2.png",
+    "characters": ["Ephnel"]
+  },
+  "SonicBoom": {
+    "name": "소닉 붐",
+    "icon": "image/Skill/Skill_H/SonicBoom.png",
+    "characters": ["Ephnel"]
+  },
+  "SpearDance": {
+    "name": "스피어 댄스",
+    "icon": "image/Skill/Skill_H/SpearDance.png",
+    "characters": ["Ephnel"]
+  },
+  "Stormpierce": {
+    "name": "스톰 피어스",
+    "icon": "image/Skill/Skill_H/Stormpierce.png",
+    "characters": ["Ephnel"]
+  },
+  "SuperNova": {
+    "name": "슈퍼 노바",
+    "icon": "image/Skill/Skill_H/SuperNova.png",
+    "characters": ["Ephnel"]
+  },
+  "SupportCall": {
+    "name": "서포트 콜",
+    "icon": "image/Skill/Skill_H/SupportCall.png",
+    "characters": ["Ephnel"]
+  },
+  "SwiftStab": {
+    "name": "스위프트 스탭",
+    "icon": "image/Skill/Skill_H/SwiftStab.png",
+    "characters": ["Ephnel"]
+  },
+  "TempestDrive": {
+    "name": "템페스트 드라이브",
+    "icon": "image/Skill/Skill_H/TempestDrive.png",
+    "characters": ["Ephnel"]
+  },
+  "TitansMassacre": {
+    "name": "타이탄스 매서커",
+    "icon": "image/Skill/Skill_H/TitansMassacre.png",
+    "characters": ["Ephnel"]
+  },
+  "UnlimitedShot": {
+    "name": "언리미티드 샷",
+    "icon": "image/Skill/Skill_H/Unlimited_Shot.png",
+    "characters": ["Ephnel"]
+  },
+  "ViciousWoodpecker": {
+    "name": "비셔스 우드페커",
+    "icon": "image/Skill/Skill_H/ViciousWoodpecker.png",
+    "characters": ["Ephnel"]
+  },
+
+
+
+  "Acidgas": {
+    "name": "애시드 가스",
+    "icon": "image/Skill/Skill_I/Acidgas.png",
+    "characters": ["LeeNabi"]
+  },
+  "BlackOut": {
+    "name": "블랙 아웃",
+    "icon": "image/Skill/Skill_I/BlackOut.png",
+    "characters": ["LeeNabi"]
+  },
+  "BustDriver": {
+    "name": "버스트 드라이버",
+    "icon": "image/Skill/Skill_I/BustDriver.png",
+    "characters": ["LeeNabi"]
+  },
+  "Chainsaw": {
+    "name": "체인쏘우",
+    "icon": "image/Skill/Skill_I/Chainsaw.png",
+    "characters": ["LeeNabi"]
+  },
+  "CloseQuartersCombat": {
+    "name": "클로즈 쿼터스 컴뱃",
+    "icon": "image/Skill/Skill_I/CloseQuartersCombat.png",
+    "characters": ["LeeNabi"]
+  },
+  "Destronail": {
+    "name": "디스트로네일",
+    "icon": "image/Skill/Skill_I/Destronail.png",
+    "characters": ["LeeNabi"]
+  },
+  "BouncingBetty": {
+    "name": "바운싱 베티",
+    "icon": "image/Skill/Skill_I/BouncingBetty.png",
+    "characters": ["LeeNabi"]
+  },
+  "FlagBomb": {
+    "name": "프래그 봄",
+    "icon": "image/Skill/Skill_I/FlagBomb.png",
+    "characters": ["LeeNabi"]
+  },
+  "GranadeLauncher": {
+    "name": "그레네이드 런처",
+    "icon": "image/Skill/Skill_I/GranadeLauncher.png",
+    "characters": ["LeeNabi"]
+  },
+  "HitandRun": {
+    "name": "히트 앤 런",
+    "icon": "image/Skill/Skill_I/HitandRun.png",
+    "characters": ["LeeNabi"]
+  },
+  "HuneyBee": {
+    "name": "허니비",
+    "icon": "image/Skill/Skill_I/HuneyBee.png",
+    "characters": ["LeeNabi"]
+  },
+  "LastStrike": {
+    "name": "라스트 스트라이크",
+    "icon": "image/Skill/Skill_I/LastStrike.png",
+    "characters": ["LeeNabi"]
+  },
+  "Reload": {
+    "name": "리로드",
+    "icon": "image/Skill/Skill_I/Reload.png",
+    "characters": ["LeeNabi"]
+  },
+  "SaveEnergy": {
+    "name": "세이브 에너지",
+    "icon": "image/Skill/Skill_I/SaveEnergy.png",
+    "characters": ["LeeNabi"]
+  },
+  "SnakingShotgun": {
+    "name": "스네이킹 샷건",
+    "icon": "image/Skill/Skill_I/SnakingShotgun.png",
+    "characters": ["LeeNabi"]
+  },
+  "TripleSniping": {
+    "name": "트리플 스나이핑",
+    "icon": "image/Skill/Skill_I/TripleSniping.png",
+    "characters": ["LeeNabi"]
+  },
+  "WildSnapshot": {
+    "name": "와일드 스냅샷",
+    "icon": "image/Skill/Skill_I/WildSnapshot.png",
+    "characters": ["LeeNabi"]
+  },
+
+
+
+  "FinisTemporis": {
+    "name": "피니스 템포리스",
+    "icon": "image/Skill/Skill_J/FinisTemporis.png",
+    "characters": ["Dhana"]
+  },
+  "BladeWaltz": {
+    "name": "블레이드 왈츠",
+    "icon": "image/Skill/Skill_J/BladeWaltz.png",
+    "characters": ["Dhana"]
+  },
+  "ChainPierce": {
+    "name": "체인 피어스",
+    "icon": "image/Skill/Skill_J/Chain-Pierce.png",
+    "characters": ["Dhana"]
+  },
+  "DarkBreaker": {
+    "name": "다크 브레이커",
+    "icon": "image/Skill/Skill_J/Dark-Breaker.png",
+    "characters": ["Dhana"]
+  },
+  "Devour": {
+    "name": "디바우어",
+    "icon": "image/Skill/Skill_J/Devour.png",
+    "characters": ["Dhana"]
+  },
+  "Dreamscape": {
+    "name": "드림스케이프",
+    "icon": "image/Skill/Skill_J/Dreamscape.png",
+    "characters": ["Dhana"]
+  },
+  "FatalSlash": {
+    "name": "페이탈 슬래시",
+    "icon": "image/Skill/Skill_J/FatalSlash.png",
+    "characters": ["Dhana"]
+  },
+  "InfinityBrandish": {
+    "name": "인피니티 브랜디시",
+    "icon": "image/Skill/Skill_J/InfinityBrandish.png",
+    "characters": ["Dhana"]
+  },
+  "ArsNovaMandala": {
+    "name": "아르스 노바 : 만다라",
+    "icon": "image/Skill/Skill_J/ArsNovaMandala2.png",
+    "characters": ["Dhana"]
+  },
+  "MomentaryChase": {
+    "name": "모멘터리 체이스",
+    "icon": "image/Skill/Skill_J/MomentaryChase.png",
+    "characters": ["Dhana"]
+  },
+  "NimblePierce": {
+    "name": "님블 피어스",
+    "icon": "image/Skill/Skill_J/NimblePierce.png",
+    "characters": ["Dhana"]
+  },
+  "RampageSpecter": {
+    "name": "램페이지 스펙터",
+    "icon": "image/Skill/Skill_J/RampageSpecter.png"
+  },
+  "Reinforce": {
+    "name": "리인포스",
+    "icon": "image/Skill/Skill_J/Reinforce.png",
+    "characters": ["Dhana"]
+  },
+  "RisingSpecter": {
+    "name": "라이징 스펙터",
+    "icon": "image/Skill/Skill_J/RisingSpecter.png",
+    "characters": ["Dhana"]
+  },
+  "ShadowBlade": {
+    "name": "쉐도우 블레이드",
+    "icon": "image/Skill/Skill_J/ShadowBlade.png",
+    "characters": ["Dhana"]
+  },
+  "ShadowTurn": {
+    "name": "쉐도우 턴",
+    "icon": "image/Skill/Skill_J/ShadowTurn.png",
+    "characters": ["Dhana"]
+  },
+  "SilentLeaf": {
+    "name": "사일런트 리프",
+    "icon": "image/Skill/Skill_J/SilentLeaf.png",
+    "characters": ["Dhana"]
+  }
+}

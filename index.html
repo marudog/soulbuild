@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+</head>
+<body>
+    <script type="text/javascript" src="script.js" defer></script>
+    <div class="main">
+		<div class="main-header">
+			<h1 class="title">소울워커 프리셋</h1>
+			<div class="controls">
+				<button id="saveScreenshot" class="ctrl-btn">스크린샷 저장</button>
+				<button id="copyUrl" class="ctrl-btn">설정 URL 복사</button>
+			</div>
+		</div>
+		<div class="character-view">
+			<img id="characterImage" src="image/Player/Main_A.png">
+			<select id="characterSelect" class="character-select">
+				<option value="char1">하루 에스티아</option>
+				<option value="char2">어윈 아크라이트</option>
+				<option value="char3">릴리 블룸메르헨</option>
+				<option value="char4">스텔라 유니벨</option>
+				<option value="char5">진 세이파츠</option>
+				<option value="char6">이리스 유마</option>
+				<option value="char7">치이 아루엘</option>
+				<option value="char8">에프넬</option>
+				<option value="char9">이나비</option>
+				<option value="char10">다나 오피니</option>
+			</select>
+		</div>
+
+		<!-- 스킬 선택 모달 -->
+		<div id="skillModal" class="modal hidden">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>스킬 선택</h2>
+					<button id="closeModal" class="close-btn">&times;</button>
+				</div>
+				<div id="skillList" class="skill-list"></div>
+			</div>
+		</div>
+		<div class="skill-panel">
+			<div class="header">
+				<div class="bonus-row thrid">
+					<select class="bonus-select thrid" bonus="thrid">
+						<option value="cooldown15">재사용 대기 시간 15% 감소</option>
+						<option value="damage10">피해 8% 증가</option>
+						<option value="crit5">SG 소모량 25% 감소</option>
+					</select>
+				</div>
+
+				<div class="skill-grid third">
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+				</div>
+
+				<div class="bonus-row second">
+					<select class="bonus-select second" bonus="second">
+						<option value="cooldown8">재사용 대기 시간 8% 감소</option>
+						<option value="damage4">피해 4% 증가 </option>
+						<option value="crit5">SG 소모량 12% 감소</option>
+					</select>
+				</div>
+
+				<div class="skill-grid second">
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+					<div class="skill-slot"></div>
+				</div>
+
+				<div class="skill-grid base">
+					<div class="skill-slot"><span>1</span></div>
+					<div class="skill-slot"><span>2</span></div>
+					<div class="skill-slot"><span>3</span></div>
+					<div class="skill-slot"><span>4</span></div>
+					<div class="skill-slot"><span>5</span></div>
+					<div class="skill-slot"><span>Z</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

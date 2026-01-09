@@ -1,0 +1,270 @@
+*, *::before, *::after {
+      box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#121212
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.char-btn {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  gap: 12px;
+  background: #2b2f33;
+}
+
+/* center main on page and header */
+.main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  max-width: 780px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+
+.controls {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.ctrl-btn {
+  background: #2b2f33;
+  color: #ddd;
+  border: 1px solid #444;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ctrl-btn:hover { background: #3a3f44; }
+
+.character-view {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.character-view img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.character-select {
+  background: #252932;
+  color: #bbbbbb;
+  border: 0px;
+  padding: 2px 6px;
+  font-size: 12px;
+  height: 24px;
+  width: 120px
+}
+
+.skill-panel {
+  width: 378px;      /* 배경 이미지 기준 */
+  height: 338px;
+  display: inline-block;
+
+  position: relative;
+  background: url("image/background.png") 0 0 / 100% 100% no-repeat;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 48px);
+  gap: 14.5px;
+
+  position: absolute;
+  left: 10px;
+  top: 270px;
+}
+
+.skill-grid.second {
+  left: 10px;
+  top: 187px;
+}
+
+.skill-grid.third {
+  left: 10px;
+  top: 68px;
+}
+
+.bonus-row {
+  display: grid;
+
+  position: absolute;
+  left: 152px;
+  top: 152px;
+
+  color: #bbbbbb;
+}
+
+.bonus-row.thrid {
+  left: 152px;
+  top: 32px;
+}
+
+.skill-slot {
+  width: 48px;
+  height: 48px;
+  background: #222;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.bonus-select {
+  background: #252932;
+  color: #bbbbbb;
+  border: 0px;
+  padding: 2px 6px;
+  font-size: 12px;
+  height: 24px;
+  width: 200px
+}
+
+/* 모달 스타일 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  border: 2px solid #444;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #444;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: #252932;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skill-item:hover {
+  background: #333;
+  border-color: #666;
+}
+
+.skill-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skill-item span {
+  color: #bbbbbb;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.skill-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}

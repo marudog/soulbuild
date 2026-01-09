@@ -1,0 +1,287 @@
+{
+  "Haru": {
+    "name": "하루 에스티아",
+    "image": "image/Player/Main_A.png",
+    "defaultSkills": [
+      "ArenaRush","BladeShower","WindBreak","Trollsverd","IllusionSlash","Prelude",
+      "BlowUp","FirstBlade","LeafAttack","PowerSlash","SunRevolve","Wafare",
+      "PierceStep","FirstBlade","LeafAttack","PowerSlash","SunRevolve","Wafare"
+    ],
+    "availableSkills": [
+      "FirstBlade",
+      "PierceStep",
+      "SpinCutter",
+      "BlowUp", 
+      "BladeQuake", 
+      "BladeWall",
+      "PowerSlash",
+      "LeafAttack", 
+      "ArenaRush",
+      "FlashStep", 
+      "WindBreak", 
+      "BladeShower",
+      "Wafare",
+      "Trollsverd",
+      "SunRevolve",
+      "IllusionSlash",
+      "Prelude"
+    ],
+    "bonus": { "step2": 0, "step3": 0 }
+  },
+  "Erwin": {
+    "name": "어윈 아크라이트",
+    "image": "image/Player/Main_B.png",
+    "defaultSkills": [
+      "ElectricShot","SwallowBullet","ElectricShot","SoulLauncher","NumberFive","CombatMaster",
+      "HideAndSeek","ChainBombing","GunCombination","GuidedShot","MissionCall","FocusShot",
+      "TakeAim","RapidFire","GunCombination","GuidedShot","MissionCall","TakeAim"
+    ],
+    "availableSkills": [
+      "SkyHigh",
+      "RapidFire",
+      "GunCombination",
+      "SlideStep", 
+      "TakeAim", 
+      "FocusShot",
+      "CombatMaster",
+      "GuidedShot", 
+      "ElectricShot",
+      "ChainBombing", 
+      "HideAndSeek", 
+      "SoulLauncher",
+      "MissionCall",
+      "SwallowBullet",
+      "NumberFive"
+    ],
+    "bonus": { "step2": 0, "step3": 0 }
+  },
+  "Lily": {
+    "name": "릴리 블룸메르현",
+    "image": "image/Player/Main_C.png",
+    "defaultSkills": [
+      "CruelSlash","ForceRegion","Furymach","DeathGuillotine","DeathGrinder","Deathtornado",
+      "EvilSlash","GrimCountdown","DeathScythe","EvilTrinity","FearChain","ScissorsExecution",
+      "EvilSlash","GrimCountdown","DeathScythe","EvilTrinity","FearChain","ScissorsExecution"
+    ],
+    "availableSkills": [
+      "EvilSlash",
+      "SpinningDevil",
+      "ScytheCutter",
+      "GrimCountdown", 
+      "EvilTrinity", 
+      "FearChain",
+      "DeathGrinder",
+      "DeathScythe", 
+      "CruelSlash",
+      "ForceRegion", 
+      "Deathtornado", 
+      "DeathGuillotine",
+      "Furymach",
+      "LeashedBeast",
+      "ScissorsExecution",
+      "FatalScythe",
+      "Asmodeus"
+    ],
+    "bonus": { "step2": 0, "step3": 0 }
+  },
+  "Stella": {
+    "name": "스텔라 유니벨",
+    "image": "image/Player/Main_D.png",
+    "defaultSkills": [
+      "BlackMorass","PhantomRelease","WolvesShowtime","BeadsPlay","GhotstyHunt","BassAttack",
+      "WolfHug","BeastTempo","TroublePass","HystericShock","TwistPull","SoulScream",
+      "WolfHug","DecadePulse","TroublePass","HystericShock","TwistPull","SoulScream"
+    ],
+    "availableSkills": [
+      "WhirlDance",
+      "PhantomRelease",
+      "TroublePass",
+      "HystericShock", 
+      "BeastParade", 
+      "BeadsPlay",
+      "DecadePulse",
+      "SoulScream",
+      "TwistPull", 
+      "BlackMorass",
+      "BeastTempo", 
+      "BassAttack", 
+      "WolvesShowtime",
+      "GhotstyHunt",
+      "WolfHug",
+      "HuntingAttack",
+      "StelliaSymphony"
+    ],
+    "bonus": { "step2": 0, "step3": 0 }
+  },
+        "Jin": {
+          "name": "진 세이파츠",
+          "image": "image/Player/Main_E.png",
+          "defaultSkills": [
+            "RigingBust","FinalFist","BarrettStraight","ActivityOverCharge","CounterStream","SpritExplosion",
+            "GloryUpper","VoldTyphoon","SpritShooter","RapidPuncher","SpritSurge","QuadraBlow",
+            "GloryUpper","PerfectCombination","GravityTwister","RapidPuncher","SpritSurge","QuadraBlow"
+          ],
+          "availableSkills": [
+            "GloryUpper",
+            "PerfectCombination",
+            "HammerKick",
+            "CounterAttack",
+            "SpritSurge",
+            "GravityTwister",
+            "SpritExplosion",
+            "SpritShooter",
+            "QuadraBlow",
+            "FusionArmor",
+            "RapidPuncher",
+            "FinalFist",
+            "CounterStream",
+            "BarrettStraight",
+            "VoldTyphoon",
+            "RigingBust",
+            "ActivityOverCharge"
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        },
+        "Iris": {
+          "name": "이리스 유마",
+          "image": "image/Player/Main_F.png",
+          "defaultSkills": [
+            "ExceedDriver","BulletStorm","Earthquake","FullBurst","WitchsBlast","RapidVulcan",
+            "OperationAshes","FortressCannon","AssaultDive","PulseFire","Liberator","LimitBrake",
+            "OperationAshes","FortressCannon","AssaultDive","PulseFire","Liberator","LimitBrake"
+          ],
+          "availableSkills": [
+            "ElectricCannon",
+            "CamelSpin",
+            "AssaultDive",
+            "FireSomersault",
+            "FortressCannon",
+            "PulseFire",
+            "LimitBrake",
+            "BulletStorm",
+            "Liberator",
+            "Earthquake",
+            "FullBurst",
+            "ExceedDriver",
+            "OperationAshes",
+            "RapidVulcan",
+            "WitchsBlast"
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        },
+        "Chii": {
+          "name": "치이 아루엘",
+          "image": "image/Player/Main_G.png",
+          "defaultSkills": [
+            "DevilsToy","RedVine","GiantKatana","AllegroSweep","DestructionBlade","HeavenlyCatFlash",
+            "AssassinateParty","OverturnGround","Thunderbolt","SeizeField","AccelerateGrinder","HellsOrigin",
+            "AssassinateParty","OverturnGround","Thunderbolt","SeizeField","ThrustArrow","SoulChange"
+          ],
+          "availableSkills": [
+            "ScareClow",
+            "OverturnGround",
+            "ThrustArrow",
+            "AllegroSweep",
+            "SoulChange",
+            "SeizeField",
+            "PeregrineFalcon",
+            "MoonStep",
+            "AccelerateGrinder",
+            "AssassinateParty",
+            "Thunderbolt",
+            "GiantKatana",
+            "RedVine",
+            "DevilsToy",
+            "HellsOrigin",
+            "HeavenlyCatFlash",
+            "Scratch",
+            "DestructionBlade"
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        },
+        "Ephnel": {
+          "name": "에프넬",
+          "image": "image/Player/Main_H.png",
+          "defaultSkills": [
+            "SuperNova","ViciousWoodpecker","AscendingTornado","UnlimitedShot","TitansMassacre","RegionsBombing",
+            "TempestDrive","SonicBoom","Amazones","SpearDance","FieldOctagon","SupportCall",
+            "TempestDrive","SonicBoom","VerticalClear","SpearDance","FieldOctagon","SwiftStab"
+          ],
+          "availableSkills": [
+            "AirBurst",
+            "SonicBoom",
+            "LightningRod",
+            "SwiftStab",
+            "FieldOctagon",
+            "SpearDance",
+            "ViciousWoodpecker",
+            "Amazones",
+            "SupportCall",
+            "MambasCoil",
+            "AscendingTornado",
+            "SuperNova",
+            "VerticalClear",
+            "TitansMassacre",
+            "TempestDrive",
+            "UnlimitedShot",
+            "RegionsBombing"
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        },
+        "Inabi": {
+          "name": "이나비",
+          "image": "image/Player/Main_I.png",
+          "defaultSkills": [
+            "CloseQuartersCombat","BustDriver","Chainsaw","Destronail","LastStrike","WildSnapshot",
+            "HitandRun","FlagBomb","Reload","Acidgas","BouncingBetty","SaveEnergy",
+            "HitandRun","FlagBomb","Reload","Acidgas","BouncingBetty","HuneyBee"
+          ],
+          "availableSkills": [
+            "HitandRun",
+            "BlackOut",
+            "Reload",
+            "Acidgas",
+            "SnakingShotgun",
+            "BustDriver",
+            "FlagBomb",
+            "HuneyBee",
+            "CloseQuartersCombat",
+            "Chainsaw",
+            "SaveEnergy",
+            "LastStrike",
+            "WildSnapshot",
+            "Destronail",
+            "BouncingBetty" 
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        },
+        "Dhana": {
+          "name": "다나 오피니",
+          "image": "image/Player/Main_J.png",
+          "defaultSkills": [
+            "RisingSpecter","FinisTemporis","RampageSpecter","BladeWaltz","MomentaryChase","NimblePierce",
+            "FatalSlash","DarkBreaker","SilentLeaf","Devour","ChainPierce","Reinforce",
+            "FatalSlash","DarkBreaker","SilentLeaf","Devour","ChainPierce", "Dreamscape"
+          ],
+          "availableSkills": [
+            "FatalSlash",
+            "ShadowTurn",
+            "NimblePierce",
+            "SilentLeaf",
+            "DarkBreaker",
+            "Reinforce",
+            "Devour",
+            "InfinityBrandish",
+            "RisingSpecter",
+            "MomentaryChase",
+            "Dreamscape",
+            "FinisTemporis",
+            "RampageSpecter",
+            "ChainPierce",
+            "BladeWaltz",
+            "ShadowBlade",
+            "ArsNovaMandala"
+          ],
+          "bonus": { "step2": 0, "step3": 0 }
+        }
+}
