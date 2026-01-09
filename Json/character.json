@@ -56,7 +56,7 @@
     "bonus": { "step2": 0, "step3": 0 }
   },
   "Lily": {
-    "name": "릴리 블룸메르현",
+    "name": "릴리 블룸메르헨",
     "image": "image/Player/Main_C.png",
     "defaultSkills": [
       "CruelSlash","ForceRegion","Furymach","DeathGuillotine","DeathGrinder","Deathtornado",
@@ -194,7 +194,6 @@
             "DevilsToy",
             "HellsOrigin",
             "HeavenlyCatFlash",
-            "Scratch",
             "DestructionBlade"
           ],
           "bonus": { "step2": 0, "step3": 0 }

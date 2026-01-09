@@ -653,11 +653,6 @@
     "icon": "image/Skill/Skill_G/ScareClow.png",
     "characters": ["Chii"]
   },
-  "Scratch": {
-    "name": "포식자의 격노",
-    "icon": "image/Skill/Skill_G/Scratch.png",
-    "characters": ["Chii"]
-  },
   "SeizeField": {
     "name": "포식자의 갈망",
     "icon": "image/Skill/Skill_G/SeizeField.png",
