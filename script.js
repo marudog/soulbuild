@@ -55,30 +55,36 @@ function displayDefaultSkills(charKey) {
 	});
 }
 
-	// 스테이트를 URL로 저장
+	// 스테이트를 URL로 저장 (스킬은 인덱스로 압축)
 	function saveStateToUrl() {
 		const characterSelect = document.getElementById("characterSelect");
 		const params = new URLSearchParams();
-		params.set("char", characterSelect.value);
+		params.set("c", characterSelect.value);
 
 		const secondSelect = document.querySelector(".bonus-select.second");
 		const thirdSelect = document.querySelector(".bonus-select.thrid");
-		if (secondSelect) params.set("second", secondSelect.value);
-		if (thirdSelect) params.set("third", thirdSelect.value);
+		if (secondSelect) params.set("s", secondSelect.value);
+		if (thirdSelect) params.set("t", thirdSelect.value);
 
+		// 스킬을 인덱스로 변환
 		const slotImgs = Array.from(document.querySelectorAll(".skill-slot img"));
-		const slotKeys = slotImgs.map(img => img.dataset.skillName || "");
-		params.set("slots", slotKeys.join(","));
+		const availableSkills = characterData[currentCharKey]?.availableSkills || [];
+		const slotIndices = slotImgs.map(img => {
+			const skillName = img.dataset.skillName || "";
+			if (!skillName) return "";
+			return availableSkills.indexOf(skillName);
+		});
+		params.set("sk", slotIndices.join(","));
 
 		const url = `${location.pathname}?${params.toString()}`;
 		window.history.replaceState({}, "", url);
 		return url;
 	}
 
-	// URL에서 스테이트 불러오기
+	// URL에서 스테이트 불러오기 (인덱스를 스킬 이름으로 변환)
 	function loadStateFromUrl() {
 		const params = new URLSearchParams(location.search);
-		const char = params.get("char");
+		const char = params.get("c");
 		if (char) {
 			const characterSelect = document.getElementById("characterSelect");
 			if (characterSelect.value !== char) {
@@ -88,8 +94,8 @@ function displayDefaultSkills(charKey) {
 			}
 		}
 
-		const second = params.get("second");
-		const third = params.get("third");
+		const second = params.get("s");
+		const third = params.get("t");
 		if (second) {
 			const secondSelect = document.querySelector(".bonus-select.second");
 			if (secondSelect) secondSelect.value = second;
@@ -99,30 +105,23 @@ function displayDefaultSkills(charKey) {
 	 		if (thirdSelect) thirdSelect.value = third;
 	 	}
 
-	 	const slots = params.get("slots");
-	 	if (slots) {
-	 		const keys = slots.split(",");
+	 	const sk = params.get("sk");
+	 	if (sk) {
+	 		const indices = sk.split(",");
+	 		const availableSkills = characterData[currentCharKey]?.availableSkills || [];
 	 		const skillSlots = document.querySelectorAll('.skill-slot');
 	 		skillSlots.forEach((slot, idx) => {
-	 			const key = keys[idx];
-	 			if (key) {
-	 				const skill = skillData[key];
-	 				if (skill) setSkillToSlot(slot, key, skill);
+	 			const indexStr = indices[idx];
+	 			if (indexStr !== undefined && indexStr !== "") {
+	 				const index = parseInt(indexStr);
+	 				const skillName = availableSkills[index];
+	 				if (skillName) {
+	 					const skill = skillData[skillName];
+	 					if (skill) setSkillToSlot(slot, skillName, skill);
+	 				}
 	 			}
 	 		});
 	 	}
-	}
-
-	// 스크린샷 저장
-	async function saveScreenshot() {
-		const el = document.querySelector('.main');
-	 	if (!el || typeof html2canvas === 'undefined') return;
-		const canvas = await html2canvas(el);
-		const url = canvas.toDataURL('image/png');
-		const a = document.createElement('a');
-		a.href = url;
-		a.download = 'soulbuild.png';
-		a.click();
 	}
 
 // 보너스 설정 초기화
@@ -199,7 +198,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 	const characterImage = document.getElementById("characterImage");
 	const skillModal = document.getElementById("skillModal");
 	const closeModal = document.getElementById("closeModal");
-	const saveBtn = document.getElementById('saveScreenshot');
 	const copyBtn = document.getElementById('copyUrl');
 
 	// JSON 데이터 로드
@@ -219,9 +217,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 			openSkillModal(slot);
 		});
 	});
-
-	// 스크린샷 버튼
-	if (saveBtn) saveBtn.addEventListener('click', () => saveScreenshot());
 
 	// URL 복사 버튼
 	if (copyBtn) copyBtn.addEventListener('click', async () => {

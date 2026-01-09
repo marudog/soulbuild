@@ -95,7 +95,10 @@ body {
   padding: 2px 6px;
   font-size: 12px;
   height: 24px;
-  width: 120px
+  width: 120px;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-weight: normal;
 }
 
 .skill-panel {
@@ -157,7 +160,10 @@ body {
   padding: 2px 6px;
   font-size: 12px;
   height: 24px;
-  width: 200px
+  width: 200px;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-weight: normal;
 }
 
 /* 모달 스타일 */
