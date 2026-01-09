@@ -228,7 +228,7 @@
 
   "EvilSlash": {
     "name": "이블 슬래시",
-    "icon": "image/Skill/Skill_C/Evilslash.png",
+    "icon": "image/Skill/Skill_C/EvilSlash.png",
     "characters": ["Lily"]
   },
   "SpinningDevil": {
