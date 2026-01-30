@@ -274,3 +274,52 @@ body {
   object-fit: contain;
   cursor: pointer;
 }
+
+/* 아카식 슬롯 스타일 (프리셋 레이아웃 하단에 고정, 가로 정렬) */
+
+.akashic-panel {
+  position: relative;
+  width: auto;
+  margin: 2px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.akashic-panel h3 {
+  margin: 0;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.akashic-bar {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.akashic-slot {
+  width: 60px;
+  height: 80px;
+  background: #1f2224;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.akashic-slot.core {
+  width: 60px;
+  height: 80px;
+  border: 1px solid #EEE;
+}
+
+.akashic-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}

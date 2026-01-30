@@ -2,6 +2,7 @@
   "Haru": {
     "name": "하루 에스티아",
     "image": "image/Player/Main_A.png",
+    "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
     "defaultSkills": [
       "ArenaRush","BladeShower","WindBreak","Trollsverd","IllusionSlash","Prelude",
       "BlowUp","FirstBlade","LeafAttack","PowerSlash","SunRevolve","Wafare",
@@ -31,6 +32,7 @@
   "Erwin": {
     "name": "어윈 아크라이트",
     "image": "image/Player/Main_B.png",
+    "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
     "defaultSkills": [
       "ElectricShot","SwallowBullet","ElectricShot","SoulLauncher","NumberFive","CombatMaster",
       "HideAndSeek","ChainBombing","GunCombination","GuidedShot","MissionCall","FocusShot",
@@ -58,6 +60,7 @@
   "Lily": {
     "name": "릴리 블룸메르헨",
     "image": "image/Player/Main_C.png",
+    "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
     "defaultSkills": [
       "CruelSlash","ForceRegion","Furymach","DeathGuillotine","DeathGrinder","Deathtornado",
       "EvilSlash","GrimCountdown","DeathScythe","EvilTrinity","FearChain","ScissorsExecution",
@@ -87,6 +90,7 @@
   "Stella": {
     "name": "스텔라 유니벨",
     "image": "image/Player/Main_D.png",
+    "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
     "defaultSkills": [
       "BlackMorass","PhantomRelease","WolvesShowtime","BeadsPlay","GhotstyHunt","BassAttack",
       "WolfHug","BeastTempo","TroublePass","HystericShock","TwistPull","SoulScream",
@@ -116,6 +120,7 @@
         "Jin": {
           "name": "진 세이파츠",
           "image": "image/Player/Main_E.png",
+          "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "RigingBust","FinalFist","BarrettStraight","ActivityOverCharge","CounterStream","SpritExplosion",
             "GloryUpper","VoldTyphoon","SpritShooter","RapidPuncher","SpritSurge","QuadraBlow",
@@ -145,6 +150,7 @@
         "Iris": {
           "name": "이리스 유마",
           "image": "image/Player/Main_F.png",
+              "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "ExceedDriver","BulletStorm","Earthquake","FullBurst","WitchsBlast","RapidVulcan",
             "OperationAshes","FortressCannon","AssaultDive","PulseFire","Liberator","LimitBrake",
@@ -172,6 +178,7 @@
         "Chii": {
           "name": "치이 아루엘",
           "image": "image/Player/Main_G.png",
+              "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "DevilsToy","RedVine","GiantKatana","AllegroSweep","DestructionBlade","HeavenlyCatFlash",
             "AssassinateParty","OverturnGround","Thunderbolt","SeizeField","AccelerateGrinder","HellsOrigin",
@@ -201,6 +208,7 @@
         "Ephnel": {
           "name": "에프넬",
           "image": "image/Player/Main_H.png",
+              "akashics": ["Vista","Lucy_M","Tenebris_M","LunarNox","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "SuperNova","ViciousWoodpecker","AscendingTornado","UnlimitedShot","TitansMassacre","RegionsBombing",
             "TempestDrive","SonicBoom","Amazones","SpearDance","FieldOctagon","SupportCall",
@@ -230,6 +238,7 @@
         "Inabi": {
           "name": "이나비",
           "image": "image/Player/Main_I.png",
+          "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "CloseQuartersCombat","BustDriver","Chainsaw","Destronail","LastStrike","WildSnapshot",
             "HitandRun","FlagBomb","Reload","Acidgas","BouncingBetty","SaveEnergy",
@@ -257,6 +266,7 @@
         "Dhana": {
           "name": "다나 오피니",
           "image": "image/Player/Main_J.png",
+          "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
             "RisingSpecter","FinisTemporis","RampageSpecter","BladeWaltz","MomentaryChase","NimblePierce",
             "FatalSlash","DarkBreaker","SilentLeaf","Devour","ChainPierce","Reinforce",
