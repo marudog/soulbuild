@@ -162,11 +162,14 @@ function displayDefaultSkills(charKey) {
 						const isCoreSlot = slot.classList.contains('core');
 						if (ar.core && !isCoreSlot) return;
 						if (!ar.core && isCoreSlot) return;
+						// 이미 동일 AR이 장착되어 있다면 건너뛰기
+						if (usedKeys.has(key)) return;
 						// 같은 태그가 이미 사용 중이면 건너뛰기
 						if (ar.tag && ar.tag !== '' && usedTags.has(ar.tag)) return;
 						setArToSlot(slot, key, ar);
-						// 태그 기록 (빈 태그는 제외)
+						// 태그/키 기록 (빈 태그는 제외)
 						if (ar.tag && ar.tag !== '') usedTags.add(ar.tag);
+						usedKeys.add(key);
 					}
 				}
 			});
@@ -270,15 +273,15 @@ function openArModal(slot) {
 
 	// 다른 슬롯에서 이미 사용 중인 태그 수집
 	const usedTags = new Set();
+	const usedKeys = new Set();
 	const allSlots = document.querySelectorAll('.akashic-slot');
-	allSlots.forEach((s, idx) => {
+	allSlots.forEach((s) => {
 		if (s === slot) return; // 현재 슬롯은 제외
 		const img = s.querySelector('img');
 		if (img && img.dataset.arKey) {
+			usedKeys.add(img.dataset.arKey);
 			const ar = arData[img.dataset.arKey];
-			if (ar && ar.tag && ar.tag !== '') {
-				usedTags.add(ar.tag);
-			}
+			if (ar && ar.tag && ar.tag !== '') usedTags.add(ar.tag);
 		}
 	});
 
@@ -288,6 +291,8 @@ function openArModal(slot) {
 		// core 아이템은 코어 슬롯에서만 선택 가능
 		if (ar.core && !isCoreSlot) return;
 		if (!ar.core && isCoreSlot) return;
+		// 이미 동일 AR이 장착되어 있다면 표시 안 함
+		if (usedKeys.has(key)) return;
 		// 같은 태그가 이미 사용 중이면 표시 안 함
 		if (ar.tag && ar.tag !== '' && usedTags.has(ar.tag)) return;
 		
