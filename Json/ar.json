@@ -38,7 +38,7 @@
   "Beneris_M": { "name": "베네리스(M)", "icon": "image/AR/Mysthic/Beneris.png", "tier": "mysthic", "tag": "beneris" },
     "Lerfenne_M": { "name": "레르펜느(M)", "icon": "image/AR/Mysthic/Lerfenne.png", "tier": "mysthic", "tag": "lerfenne" },
 	"GoldLawscar_M": { "name": "로스카(M)", "icon": "image/AR/Mysthic/GoldLawscar.png", "tier": "mysthic", "tag": "sv" },
-  "EclipseJunkQueen": { "name": "정크퀸(M)", "icon": "image/AR/Mysthic/EclipseJunkQueen.png", "tier": "mysthic", "tag": "junkqueen" },
+  "EclipseJunkQueen": { "name": "정크 퀸(M)", "icon": "image/AR/Mysthic/EclipseJunkQueen.png", "tier": "mysthic", "tag": "junkqueen" },
   "Poison_M": { "name": "포이즌(M)", "icon": "image/AR/Mysthic/Poison.png", "tier": "mysthic", "tag": "poison" },
 
 "Lawna": { "name": "로우나", "icon": "image/AR/Core/Lawna.png", "tier": "core", "core": true, "tag": "" },
