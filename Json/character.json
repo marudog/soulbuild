@@ -34,9 +34,9 @@
     "image": "image/Player/Main_B.png",
     "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
     "defaultSkills": [
-      "ElectricShot","SwallowBullet","ElectricShot","SoulLauncher","NumberFive","CombatMaster",
-      "HideAndSeek","ChainBombing","GunCombination","GuidedShot","MissionCall","FocusShot",
-      "TakeAim","RapidFire","GunCombination","GuidedShot","MissionCall","TakeAim"
+      "SoulLauncher","Omnishot","GunCombination","ElectricShot","SwallowBullet","GeometryPlatoon",
+      "TakeAim","NumberFive","SlideStep","SkyHigh","ChainBombing","HideAndSeek",
+      "TakeAim","MissionCall","SlideStep","SkyHigh","GuidedShot","FocusShot"
     ],
     "availableSkills": [
       "SkyHigh",
@@ -53,7 +53,9 @@
       "SoulLauncher",
       "MissionCall",
       "SwallowBullet",
-      "NumberFive"
+      "NumberFive",
+      "Omnishot",
+      "GeometryPlatoon"
     ],
     "bonus": { "step2": 0, "step3": 0 }
   },
@@ -152,9 +154,9 @@
           "image": "image/Player/Main_F.png",
               "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
-            "ExceedDriver","BulletStorm","Earthquake","FullBurst","WitchsBlast","RapidVulcan",
-            "OperationAshes","FortressCannon","AssaultDive","PulseFire","Liberator","LimitBrake",
-            "OperationAshes","FortressCannon","AssaultDive","PulseFire","Liberator","LimitBrake"
+            "MegaQuake","Earthquake","FullBurst","WitchsBlast","SpiralBlitz","ExceedDriver",
+            "Liberator","RapidVulcan","AssaultDive","BulletStorm","ElectricCannon","PulseFire",
+            "Liberator","OperationAshes","AssaultDive","FortressCannon","LimitBrake","PulseFire"
           ],
           "availableSkills": [
             "ElectricCannon",
@@ -171,7 +173,10 @@
             "ExceedDriver",
             "OperationAshes",
             "RapidVulcan",
-            "WitchsBlast"
+            "WitchsBlast",
+            "MegaQuake",
+            "SpiralBlitz"
+
           ],
           "bonus": { "step2": 0, "step3": 0 }
         },
@@ -240,9 +245,9 @@
           "image": "image/Player/Main_I.png",
           "akashics": ["Vista","Lucy_M","Tenebris_M","Beneris_M","GoldLawscar_M","Reeve"],
           "defaultSkills": [
-            "CloseQuartersCombat","BustDriver","Chainsaw","Destronail","LastStrike","WildSnapshot",
-            "HitandRun","FlagBomb","Reload","Acidgas","BouncingBetty","SaveEnergy",
-            "HitandRun","FlagBomb","Reload","Acidgas","BouncingBetty","HuneyBee"
+            "WildSnapshot","Destronail","Chainsaw","BustDriver","LastStrike","TacticalAirStrike",
+            "InfinityBullet","FlagBomb","Acidgas","CloseQuartersCombat","BouncingBetty","SaveEnergy",
+            "InfinityBullet","FlagBomb","Reload","CloseQuartersCombat","BouncingBetty","HuneyBee"
           ],
           "availableSkills": [
             "HitandRun",
@@ -259,7 +264,9 @@
             "LastStrike",
             "WildSnapshot",
             "Destronail",
-            "BouncingBetty" 
+            "BouncingBetty",
+            "InfinityBullet",
+            "TacticalAirStrike"
           ],
           "bonus": { "step2": 0, "step3": 0 }
         },

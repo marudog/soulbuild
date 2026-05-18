@@ -16,7 +16,10 @@
 			</div>
 		</div>
 		<div class="character-view">
-			<img id="characterImage" src="image/Player/Main_A.png">
+			<div class="character-image-row">
+				<div id="weaponSlot" class="weapon-slot" title="무기 선택"></div>
+				<img id="characterImage" src="image/Player/Main_A.png">
+			</div>
 			<select id="characterSelect" class="character-select">
 				<option value="char1">하루 에스티아</option>
 				<option value="char2">어윈 아크라이트</option>
@@ -29,6 +32,17 @@
 				<option value="char9">이나비</option>
 				<option value="char10">다나 오피니</option>
 			</select>
+		</div>
+
+		<!-- 무기 선택 모달 -->
+		<div id="weaponModal" class="modal hidden">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>무기 선택</h2>
+					<button id="closeWeaponModal" class="close-btn">&times;</button>
+				</div>
+				<div id="weaponList" class="skill-list"></div>
+			</div>
 		</div>
 
 		<!-- 스킬 선택 모달 -->

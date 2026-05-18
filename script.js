@@ -1,7 +1,9 @@
 let characterData = {};
 let skillData = {};
 let arData = {};
+let weaponData = {};
 let currentCharKey = "Haru";
+let currentWeaponKey = "";
 let selectedSlot = null;
 
 const characters = {
@@ -28,6 +30,9 @@ async function loadJsonData() {
 
 		const arResponse = await fetch("Json/ar.json");
 		arData = await arResponse.json();
+
+		const weaponResponse = await fetch("Json/weapon.json");
+		weaponData = await weaponResponse.json();
 	} catch (error) {
 		console.error("JSON 파일 로드 실패:", error);
 	}
@@ -92,6 +97,7 @@ function displayDefaultSkills(charKey) {
 			return idx >= 0 ? String(idx) : '';
 		});
 		params.set('ar', arIndices.join(','));
+		if (currentWeaponKey) params.set('w', currentWeaponKey);
 
 		const url = `${location.pathname}?${params.toString()}`;
 		window.history.replaceState({}, "", url);
@@ -122,6 +128,7 @@ function displayDefaultSkills(charKey) {
 	 		if (thirdSelect) thirdSelect.value = third;
 	 	}
 
+	 	const weaponKey = params.get("w");
 	 	const sk = params.get("sk");
 	 	if (sk) {
 	 		const indices = sk.split(",");
@@ -140,6 +147,17 @@ function displayDefaultSkills(charKey) {
 	 		});
 	 	}
 
+		if (weaponKey) {
+			const validWeapon = weaponData[weaponKey] && weaponData[weaponKey].characters.includes(currentCharKey);
+			if (validWeapon) {
+				setWeaponToSlot(weaponKey, weaponData[weaponKey]);
+			} else {
+				displayWeapon(currentCharKey, true);
+			}
+		} else {
+			displayWeapon(currentCharKey, true);
+		}
+
 		// 아카식 상태 로드
 		const arParam = params.get('ar');
 		if (arParam) {
@@ -153,6 +171,7 @@ function displayDefaultSkills(charKey) {
 			}
 			const akSlots = document.querySelectorAll('.akashic-slot');
 			const usedTags = new Set(); // 이미 적용된 태그 추적
+			const usedKeys = new Set();
 			akSlots.forEach((slot, idx) => {
 				const key = keys[idx];
 				if (key) {
@@ -243,6 +262,72 @@ function setSkillToSlot(slot, skillName, skill) {
 
 	// 상태 URL 업데이트
 	saveStateToUrl();
+}
+
+function displayWeapon(charKey, forceDefault = false) {
+	const weaponSlot = document.getElementById('weaponSlot');
+	if (!weaponSlot) return;
+
+	const available = Object.entries(weaponData).filter(([, weapon]) => weapon.characters.includes(charKey));
+	if (available.length === 0) {
+		weaponSlot.innerHTML = '<span>무기 없음</span>';
+		currentWeaponKey = "";
+		return;
+	}
+
+	// 현재 선택 무기가 없거나 캐릭터가 바뀌었을 때 기본 무기 설정
+	const validCurrent = currentWeaponKey && weaponData[currentWeaponKey] && weaponData[currentWeaponKey].characters.includes(charKey);
+	if (!validCurrent || forceDefault) {
+		currentWeaponKey = available[0][0];
+	}
+
+	const weapon = weaponData[currentWeaponKey];
+	if (weapon) {
+		setWeaponToSlot(currentWeaponKey, weapon, false);
+	} else {
+		weaponSlot.innerHTML = '<span>무기 선택</span>';
+	}
+}
+
+function openWeaponModal() {
+	selectedSlot = null;
+	const weaponModal = document.getElementById('weaponModal');
+	const weaponList = document.getElementById('weaponList');
+	const available = Object.entries(weaponData).filter(([, weapon]) => weapon.characters.includes(currentCharKey));
+	weaponList.innerHTML = '';
+
+	available.forEach(([key, weapon]) => {
+		const item = document.createElement('div');
+		item.className = 'skill-item';
+		item.innerHTML = `
+			<img src="${weapon.icon}" alt="${weapon.name || key}">
+			<span>${weapon.name || key}</span>
+		`;
+		item.addEventListener('click', () => {
+			setWeaponToSlot(key, weapon);
+			weaponModal.classList.add('hidden');
+		});
+		weaponList.appendChild(item);
+	});
+
+	weaponModal.classList.remove('hidden');
+}
+
+function setWeaponToSlot(weaponKey, weapon, save = true) {
+	currentWeaponKey = weaponKey;
+	const weaponSlot = document.getElementById('weaponSlot');
+	if (!weaponSlot) return;
+	weaponSlot.innerHTML = '';
+	const img = document.createElement('img');
+	img.src = weapon.icon;
+	img.alt = weapon.name || weaponKey;
+	img.title = weapon.name || weaponKey;
+	img.dataset.weaponKey = weaponKey;
+	weaponSlot.appendChild(img);
+	const label = document.createElement('span');
+	label.textContent = weapon.name || weaponKey;
+	weaponSlot.appendChild(label);
+	if (save) saveStateToUrl();
 }
 
 // --- 아카식 관련 함수 ---
@@ -340,19 +425,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 	setDefaultBonus(init.charKey);
 	// 아카식 표시 초기화
 	displayAkashics(init.charKey);
-
-	// akashic-slot 클릭 이벤트
-	document.querySelectorAll('.akashic-slot').forEach(slot => {
-		slot.addEventListener('click', () => {
-			openArModal(slot);
-		});
-	});
+		displayWeapon(init.charKey);
 
 	// skill-slot 클릭 이벤트
 	document.querySelectorAll(".skill-slot").forEach(slot => {
 		slot.addEventListener("click", () => {
 			openSkillModal(slot);
 		});
+	});
+
+	// 아카식 슬롯 클릭 이벤트
+	document.querySelectorAll('.akashic-slot').forEach(slot => {
+		slot.addEventListener('click', () => openArModal(slot));
 	});
 
 	// URL 복사 버튼
@@ -371,6 +455,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 		const closeArModal = document.getElementById('closeArModal');
 		if (closeArModal) closeArModal.addEventListener('click', () => arModal.classList.add('hidden'));
 		if (arModal) arModal.addEventListener('click', (e) => { if (e.target === arModal) arModal.classList.add('hidden'); });
+
+		const weaponModal = document.getElementById('weaponModal');
+		const closeWeaponModal = document.getElementById('closeWeaponModal');
+		if (closeWeaponModal) closeWeaponModal.addEventListener('click', () => weaponModal.classList.add('hidden'));
+		if (weaponModal) weaponModal.addEventListener('click', (e) => { if (e.target === weaponModal) weaponModal.classList.add('hidden'); });
+
+		const weaponSlot = document.getElementById('weaponSlot');
+		if (weaponSlot) {
+			weaponSlot.addEventListener('click', () => openWeaponModal());
+		}
 
 	// 모달 닫기 버튼
 	closeModal.addEventListener("click", () => {
@@ -393,7 +487,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 		currentCharKey = data.charKey;
 		displayDefaultSkills(data.charKey);
 		setDefaultBonus(data.charKey);
-			displayAkashics(data.charKey);
+		displayAkashics(data.charKey);
+		displayWeapon(data.charKey, true);
 		saveStateToUrl();
 	});
 

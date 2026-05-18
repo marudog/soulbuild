@@ -223,6 +223,17 @@
     "icon": "image/Skill/Skill_B/No5.png",
     "characters": ["Erwin"]
   },
+  "Omnishot": {
+    "name": "옴니 샷",
+    "icon": "image/Skill/Skill_B/Omnishot.png",
+    "characters": ["Erwin"]
+  },
+  "GeometryPlatoon": {
+    "name": "지오메트리 플래툰",
+    "icon": "image/Skill/Skill_B/GeometryPlatoon.png",
+    "characters": ["Erwin"]
+  },
+
 
 
 
@@ -575,6 +586,16 @@
     "icon": "image/Skill/Skill_F/WitchsBlast.png",
     "characters": ["Iris"]
   },
+  "MegaQuake": {
+    "name": "메가 퀘이크",
+    "icon": "image/Skill/Skill_F/MegaQuake.png",
+    "characters": ["Iris"]
+  },
+  "SpiralBlitz": {
+    "name": "스파이럴 블리츠",
+    "icon": "image/Skill/Skill_F/SpiralBlitz.png",
+    "characters": ["Iris"]
+  },
 
 
 
@@ -857,6 +878,16 @@
   "WildSnapshot": {
     "name": "와일드 스냅샷",
     "icon": "image/Skill/Skill_I/WildSnapshot.png",
+    "characters": ["LeeNabi"]
+  },
+  "InfinityBullet": {
+    "name": "인피니티 불렛",
+    "icon": "image/Skill/Skill_I/Infinity_Bullet.png",
+    "characters": ["LeeNabi"]
+  },
+  "TacticalAirStrike": {
+    "name": "택티컬 에어스트라이크",
+    "icon": "image/Skill/Skill_I/TacticalAirStrike.png",
     "characters": ["LeeNabi"]
   },
 

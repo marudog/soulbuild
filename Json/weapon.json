@@ -1,0 +1,111 @@
+{
+	"HaruGold": {
+		"icon": "image/Weapon/PC_A_GOLD.png",
+		"characters": ["Haru"],
+		"name" : "성검"
+	},
+	"HaruDoom": {
+		"icon": "image/Weapon/PC_A_DOOM.png",
+		"characters": ["Haru"],
+		"name" : "불검"
+	},
+
+	"ErwinGold": {
+		"icon": "image/Weapon/PC_B_GOLD.png",
+		"characters": ["Erwin"],
+		"name" : "도박"
+	},
+	"ErwinDoom": {
+		"icon": "image/Weapon/PC_B_DOOM.png",
+		"characters": ["Erwin"],
+		"name" : "쾌속"
+	},
+
+	"LilyGold": {
+		"icon": "image/Weapon/PC_C_GOLD.png",
+		"characters": ["Lily"],
+		"name" : "죽음"
+	},
+	"LilyDoom": {
+		"icon": "image/Weapon/PC_C_DOOM.png",
+		"characters": ["Lily"],
+		"name" : "달"
+	},
+
+	"StellaGold": {
+		"icon": "image/Weapon/PC_D_GOLD.png",
+		"characters": ["Stella"],
+		"name" : "허공"
+	},
+	"StellaDoom": {
+		"icon": "image/Weapon/PC_D_DOOM.png",
+		"characters": ["Stella"],
+		"name" : "울음"
+	},
+
+	"JinGold": {
+		"icon": "image/Weapon/PC_E_GOLD.png",
+		"characters": ["Jin"],
+		"name" : "필살"
+	},
+	"JinDoom": {
+		"icon": "image/Weapon/PC_E_DOOM.png",
+		"characters": ["Jin"],
+		"name" : "지진"
+	},
+
+	"IrisGold": {
+		"icon": "image/Weapon/PC_F_GOLD.png",
+		"characters": ["Iris"],
+		"name" : "노포"
+	},
+	"IrisDoom": {
+		"icon": "image/Weapon/PC_F_DOOM.png",
+		"characters": ["Iris"],
+		"name" : "마탄"
+	},
+
+	"ChiiGold": {
+		"icon": "image/Weapon/PC_G_GOLD.png",
+		"characters": ["Chii"],
+		"name" : "무형"
+	},
+	"ChiiDoom": {
+		"icon": "image/Weapon/PC_G_DOOM.png",
+		"characters": ["Chii"],
+		"name" : "요검"
+	},
+
+	"EphnelGold": {
+		"icon": "image/Weapon/PC_H_GOLD.png",
+		"characters": ["Ephnel"],
+		"name" : "성물"
+	},
+	"EphnelDoom": {
+		"icon": "image/Weapon/PC_H_DOOM.png",
+		"characters": ["Ephnel"],
+		"name" : "불꽃"
+	},
+
+	"LeeNabiGold": {
+		"icon": "image/Weapon/PC_I_GOLD.png",
+		"characters": ["Inabi"],
+		"name" : "천둥"
+	},
+	"LeeNabiDoom": {
+		"icon": "image/Weapon/PC_I_DOOM.png",
+		"characters": ["Inabi"],
+		"name" : "별"
+	},
+
+	"DhanaGold": {
+		"icon": "image/Weapon/PC_J_GOLD.png",
+		"characters": ["Dhana"],
+		"name" : "연인"
+	},
+	"DhanaDoom": {
+		"icon": "image/Weapon/PC_J_DOOM.png",
+		"characters": ["Dhana"],
+		"name" : "가닥"
+	}
+}
