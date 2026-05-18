@@ -64,75 +64,98 @@ function displayDefaultSkills(charKey) {
 	});
 }
 
-	// 스테이트를 URL로 저장 (스킬은 인덱스로 압축)
-	function saveStateToUrl() {
+// 스테이트를 URL로 저장 (스킬은 인덱스로 압축)
+function saveStateToUrl() {
+	const characterSelect = document.getElementById("characterSelect");
+	const params = new URLSearchParams();
+	params.set("c", String(characterSelect.selectedIndex));
+
+	const secondSelect = document.querySelector(".bonus-select.second");
+	const thirdSelect = document.querySelector(".bonus-select.thrid");
+	if (secondSelect) params.set("s", String(secondSelect.selectedIndex));
+	if (thirdSelect) params.set("t", String(thirdSelect.selectedIndex));
+
+	const slotImgs = Array.from(document.querySelectorAll(".skill-slot img"));
+	const availableSkills = characterData[currentCharKey]?.availableSkills || [];
+	const slotIndices = slotImgs.map(img => {
+		const skillName = img.dataset.skillName || "";
+		if (!skillName) return "";
+		return availableSkills.indexOf(skillName);
+	});
+	params.set("sk", slotIndices.join(","));
+
+	const allArKeys = Object.keys(arData);
+	const arSlots = Array.from(document.querySelectorAll('.akashic-slot'));
+	const arIndices = arSlots.map(s => {
+		const img = s.querySelector('img');
+		if (!img || !img.dataset.arKey) return '';
+		const key = img.dataset.arKey;
+		const idx = allArKeys.indexOf(key);
+		return idx >= 0 ? String(idx) : '';
+	});
+	params.set('ar', arIndices.join(','));
+
+	const availableWeapons = Object.entries(weaponData)
+		.filter(([, weapon]) => weapon.characters.includes(currentCharKey))
+		.map(([key]) => key);
+	const selectedWeaponIndex = availableWeapons.indexOf(currentWeaponKey);
+	if (selectedWeaponIndex >= 0) params.set('w', String(selectedWeaponIndex));
+
+	const url = `${location.pathname}?${params.toString()}`;
+	window.history.replaceState({}, "", url);
+	return url;
+}
+
+// URL에서 스테이트 불러오기 (인덱스를 스킬 이름으로 변환)
+function loadStateFromUrl() {
+	const params = new URLSearchParams(location.search);
+	const char = params.get("c");
+	if (char !== null) {
 		const characterSelect = document.getElementById("characterSelect");
-		const params = new URLSearchParams();
-		params.set("c", characterSelect.value);
-
-		const secondSelect = document.querySelector(".bonus-select.second");
-		const thirdSelect = document.querySelector(".bonus-select.thrid");
-		if (secondSelect) params.set("s", secondSelect.value);
-		if (thirdSelect) params.set("t", thirdSelect.value);
-
-		// 스킬을 인덱스로 변환
-		const slotImgs = Array.from(document.querySelectorAll(".skill-slot img"));
-		const availableSkills = characterData[currentCharKey]?.availableSkills || [];
-		const slotIndices = slotImgs.map(img => {
-			const skillName = img.dataset.skillName || "";
-			if (!skillName) return "";
-			return availableSkills.indexOf(skillName);
-		});
-		params.set("sk", slotIndices.join(","));
-
-		// 아카식 상태 (key 리스트)
-		// 아카식 상태: index 기반 압축 인코딩
-		const allArKeys = Object.keys(arData);
-		const arSlots = Array.from(document.querySelectorAll('.akashic-slot'));
-		const arIndices = arSlots.map(s => {
-			const img = s.querySelector('img');
-			if (!img || !img.dataset.arKey) return '';
-			const key = img.dataset.arKey;
-			const idx = allArKeys.indexOf(key);
-			return idx >= 0 ? String(idx) : '';
-		});
-		params.set('ar', arIndices.join(','));
-		if (currentWeaponKey) params.set('w', currentWeaponKey);
-
-		const url = `${location.pathname}?${params.toString()}`;
-		window.history.replaceState({}, "", url);
-		return url;
-	}
-
-	// URL에서 스테이트 불러오기 (인덱스를 스킬 이름으로 변환)
-	function loadStateFromUrl() {
-		const params = new URLSearchParams(location.search);
-		const char = params.get("c");
-		if (char) {
-			const characterSelect = document.getElementById("characterSelect");
-			if (characterSelect.value !== char) {
-				characterSelect.value = char;
+		if (/^\d+$/.test(char)) {
+			const index = parseInt(char, 10);
+			if (characterSelect.options[index]) {
+				characterSelect.selectedIndex = index;
 				const ev = new Event('change');
 				characterSelect.dispatchEvent(ev);
 			}
+		} else if (characterSelect.value !== char) {
+			characterSelect.value = char;
+			const ev = new Event('change');
+			characterSelect.dispatchEvent(ev);
 		}
+	}
 
-		const second = params.get("s");
-		const third = params.get("t");
-		if (second) {
-			const secondSelect = document.querySelector(".bonus-select.second");
-			if (secondSelect) secondSelect.value = second;
+	const second = params.get("s");
+	const third = params.get("t");
+	if (second !== null) {
+		const secondSelect = document.querySelector(".bonus-select.second");
+		if (secondSelect) {
+			if (/^\d+$/.test(second)) {
+				const idx = parseInt(second, 10);
+				if (secondSelect.options[idx]) secondSelect.selectedIndex = idx;
+			} else {
+				secondSelect.value = second;
+			}
 		}
-	 	if (third) {
-	 		const thirdSelect = document.querySelector(".bonus-select.thrid");
-	 		if (thirdSelect) thirdSelect.value = third;
-	 	}
+	}
+	if (third !== null) {
+		const thirdSelect = document.querySelector(".bonus-select.thrid");
+ 		if (thirdSelect) {
+ 			if (/^\d+$/.test(third)) {
+ 				const idx = parseInt(third, 10);
+ 				if (thirdSelect.options[idx]) thirdSelect.selectedIndex = idx;
+ 			} else {
+ 				thirdSelect.value = third;
+ 			}
+ 		}
+	}
 
-	 	const weaponKey = params.get("w");
-	 	const sk = params.get("sk");
-	 	if (sk) {
-	 		const indices = sk.split(",");
-	 		const availableSkills = characterData[currentCharKey]?.availableSkills || [];
+		const weaponParam = params.get("w");
+		const sk = params.get("sk");
+		if (sk) {
+			const indices = sk.split(",");
+			const availableSkills = characterData[currentCharKey]?.availableSkills || [];
 	 		const skillSlots = document.querySelectorAll('.skill-slot');
 	 		skillSlots.forEach((slot, idx) => {
 	 			const indexStr = indices[idx];
@@ -146,6 +169,19 @@ function displayDefaultSkills(charKey) {
 	 			}
 	 		});
 	 	}
+
+		let weaponKey = "";
+		if (weaponParam !== null) {
+			if (/^\d+$/.test(weaponParam)) {
+				const availableWeapons = Object.entries(weaponData)
+					.filter(([, weapon]) => weapon.characters.includes(currentCharKey))
+					.map(([key]) => key);
+				const index = parseInt(weaponParam, 10);
+				if (availableWeapons[index]) weaponKey = availableWeapons[index];
+			} else {
+				weaponKey = weaponParam;
+			}
+		}
 
 		if (weaponKey) {
 			const validWeapon = weaponData[weaponKey] && weaponData[weaponKey].characters.includes(currentCharKey);
