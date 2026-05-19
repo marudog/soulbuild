@@ -7,11 +7,26 @@ html, body {
   padding: 0;
 }
 
+html {
+  font-family: 'Noto Sans KR', 'Noto Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body, button, input, select, textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#121212
+  background:#121212;
 }
 
 .top {
