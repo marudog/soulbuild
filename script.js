@@ -486,6 +486,35 @@ document.addEventListener("DOMContentLoaded", async () => {
 		}
 	});
 
+	// 스크린샷 버튼: 프리셋 영역(`#presetArea`)만 캡처하고 글꼴 로드를 기다려 미묘한 정렬 오류를 줄임
+	const screenshotBtn = document.getElementById('screenshotBtn');
+	if (screenshotBtn) screenshotBtn.addEventListener('click', async () => {
+		try {
+			// 글꼴이 로드될 때까지 대기
+			if (document.fonts && document.fonts.ready) await document.fonts.ready;
+			const preset = document.getElementById('presetArea');
+			if (!preset) throw new Error('프리셋 영역을 찾을 수 없습니다.');
+			// 캔버스 스케일을 1로 고정하면 서브픽셀 렌더링 차이로 인한 텍스트 미세 이동을 줄입니다.
+			// 캡처 대상의 배경색을 우선 사용하고, 투명이면 .main 또는 body의 배경으로 대체
+			let bg = window.getComputedStyle(preset).backgroundColor;
+			if (!bg || bg === 'rgba(0, 0, 0, 0)' || bg === 'transparent') {
+				const mainEl = document.querySelector('.main');
+				bg = mainEl ? window.getComputedStyle(mainEl).backgroundColor : window.getComputedStyle(document.body).backgroundColor;
+			}
+					const canvas = await html2canvas(preset, { useCORS: true, scale: 1, backgroundColor: bg, logging: false });
+					const dataUrl = canvas.toDataURL('image/png');
+					const a = document.createElement('a');
+					a.href = dataUrl;
+					a.download = 'soulbuild-preset.png';
+					document.body.appendChild(a);
+					a.click();
+					a.remove();
+		} catch (err) {
+			console.error('스크린샷 생성 실패:', err);
+			alert('스크린샷 생성에 실패했습니다.');
+		}
+	});
+
 		// 아카식 모달 닫기
 		const arModal = document.getElementById('arModal');
 		const closeArModal = document.getElementById('closeArModal');

@@ -51,6 +51,13 @@ body {
   margin-bottom: 8px;
 }
 
+/* main 컨테이너 여백/최대 너비로 레이아웃 깨짐 완화 */
+.main {
+  padding: 12px;
+  max-width: 820px;
+  border-radius: 6px;
+}
+
 .title {
   color: #fff;
   font-size: 20px;
@@ -73,6 +80,15 @@ body {
 }
 
 .ctrl-btn:hover { background: #3a3f44; }
+
+/* 프리셋 영역을 명확하게 구분 (스크린샷 대상) */
+#presetArea {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
 
 .character-view {
   width: 240px;

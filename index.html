@@ -7,14 +7,19 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <script type="text/javascript" src="script.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+	<script type="text/javascript" src="script.js" defer></script>
     <div class="main">
 		<div class="main-header">
 			<h1 class="title">소울워커 프리셋</h1>
 			<div class="controls">
 				<button id="copyUrl" class="ctrl-btn">설정 URL 복사</button>
+				<button id="screenshotBtn" class="ctrl-btn">스크린샷 저장</button>
 			</div>
 		</div>
+
+
+		<div id="presetArea">
 		<div class="character-view">
 			<div class="character-image-row">
 				<div id="weaponSlot" class="weapon-slot" title="무기 선택"></div>
@@ -125,6 +130,7 @@
 				<div class="akashic-slot" data-index="4"></div>
 				<div class="akashic-slot core" data-index="5"></div>
 			</div>
+		</div>
 		</div>
 	</div>
 </body>
